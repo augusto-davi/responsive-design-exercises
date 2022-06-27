@@ -1,0 +1,58 @@
+/* 
+Practicing Flexbox & Mobile-first
+
+- Creating a responsive 4-block container
+- No use of Media Queries
+- Key values
+  parent (container): column
+  children (sub): wrap
+  content: 1 1 300px 
+*/
+
+.container {
+  display: flex;
+  /* to fit properly in every screen size */
+  flex-direction: column;
+  /* separate subcontainers accordingly the space between the images */
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f73;
+}
+
+.subcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* separate images to match the subcontainers gap */
+  gap: 1rem;
+  width: 100%;
+}
+
+.content {
+  /* prevent overflowing the viewport in landscape-oriented screens */
+  height: calc(50vh - 2rem);
+  /* base size and adaptation (stretch) */
+  flex: 1 1 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.one {
+  background-image: url(dog-pexels.jpg);
+  /* takes better portions of the image based on space available */
+  background-position: 50% 35%;
+}
+
+.two {
+  background-image: url(lilly-rum-L6W9ZIQ5saM-unsplash.jpg);
+  background-position: right 35% bottom 45%;
+}
+
+.three {
+  background-image: url(business.jpg);
+  background-position: center;
+}
+
+.four {
+  background-image: url(volley-olympics.jpg);
+  background-position: right 35% bottom 45%;
+}
