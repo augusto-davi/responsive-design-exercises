@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-container__title" role="heading">Entrar na lista</h2>
+      <form class="form" action="#" role="form">
+        <div class="form__input-wrapper">
+          <label for="name">Nome</label>
+          <input
+            required
+            type="text"
+            class="form__input"
+            name="name"
+            role="textbox"
+          />
+          <span class="error"></span>
+        </div>
+        <div class="form__input-wrapper">
+          <label for="email">Email</label>
+          <input
+            required
+            type="email"
+            class="form__input"
+            name="email"
+            role="textbox"
+          />
+          <span class="error"></span>
+        </div>
+        <button type="submit" class="form__button">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

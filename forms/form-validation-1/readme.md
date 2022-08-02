@@ -1,0 +1,2 @@
+- [Aula de validações customizadas](https://www.youtube.com/watch?v=GTMEuHxh8aQ)
+- Rocketseat, prof. Mayk Brito.
