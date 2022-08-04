@@ -3,56 +3,61 @@ Practicing Flexbox & Mobile-first
 
 - Creating a responsive 4-block container
 - No use of Media Queries
-- Key values
-  parent (container): column
-  children (sub): wrap
-  content: 1 1 300px 
+- Key values:
+  - parent (container): column
+  - children (subcontainer): wrap
+  - content: flex: 1 1 flex-basis 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  margin: 0;
+}
 
 .container {
   display: flex;
-  /* to fit properly in every screen size */
   flex-direction: column;
-  /* separate subcontainers accordingly the space between the images */
   gap: 1rem;
   padding: 1rem;
-  background-color: #f73;
 }
 
 .subcontainer {
   display: flex;
   flex-wrap: wrap;
-  /* separate images to match the subcontainers gap */
   gap: 1rem;
-  width: 100%;
 }
 
 .content {
-  /* prevent overflowing the viewport in landscape-oriented screens */
-  height: calc(50vh - 2rem);
-  /* base size and adaptation (stretch) */
-  flex: 1 1 300px;
-  width: 100%;
-  background-size: cover;
+  height: calc(50vh - 1.5rem);
+  flex: 1 1 calc(50vh - 1.5rem);
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
 
 .one {
-  background-image: url(dog-pexels.jpg);
-  /* takes better portions of the image based on space available */
-  background-position: 50% 35%;
+  background: #79a1f8;
 }
 
 .two {
-  background-image: url(lilly-rum-L6W9ZIQ5saM-unsplash.jpg);
-  background-position: right 35% bottom 45%;
+  background: #9fa6ff;
 }
 
 .three {
-  background-image: url(business.jpg);
-  background-position: center;
+  background: #3b64d2;
 }
 
 .four {
-  background-image: url(volley-olympics.jpg);
-  background-position: right 35% bottom 45%;
+  background: #6269c5;
 }
