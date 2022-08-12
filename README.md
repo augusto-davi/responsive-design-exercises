@@ -2,7 +2,9 @@
 
 ### CSS Flexbox
 
-[4-blocks-container](https://codepen.io/augusto-davi/pen/jOzzQaL)
+| Layout      | Example |
+| --- | --- |
+| 6-blocks-container | https://codepen.io/augusto-davi/pen/jOzzQaL |
 
 ### CSS Grid
 
